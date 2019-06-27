@@ -1,7 +1,8 @@
 import {
   Material,
   WebGLRenderer,
-  WebGLRenderTarget
+  WebGLRenderTarget,
+  Object3D
 } from '../../../src/Three';
 
 export class Pass {
@@ -16,7 +17,7 @@ export class Pass {
 }
 
 export namespace Pass {
-	class FullScreenQuad {
+	class FullScreenQuad extends Object3D {
 		constructor( material?: Material );
 
 		render( renderer: WebGLRenderer ): void;

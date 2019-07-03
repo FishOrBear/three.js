@@ -3328,6 +3328,8 @@ var FBXLoader = ( function () {
 
 				var node = this.parseNode( reader, version );
 				if ( node !== null ) allNodes.add( node.name, node );
+				else
+					break;
 
 			}
 
